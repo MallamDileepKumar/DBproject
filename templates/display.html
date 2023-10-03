@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Data</title>
+</head>
+<body bgcolor="lightblue">
+<center>
+    <h1>Display Data</h1>
+    <table bgcolor="white" border="2" width="40%">
+       <tr><td>Id</td><td>Name</td><td>Cost</td><td>Manufacturing Date</td><td>Expiry Date</td></tr>
+        {% for i in product %}
+        <tr><td>{{i.Id}}</td><td>{{i.Name}}</td><td>{{i.Cost}}</td><td>{{i.Mft}}</td><td>{{i.Exp}}</td></tr>
+        {% endfor %}
+
+    </table>
+</center>
+
+</body>
+</html>
